@@ -65,8 +65,8 @@ export class VMDLoaderWrapper {
         "BLINK": "まばたき",
     };
     rotationOffsets = {
-        "leftUpperArm": -38 * THREE.MathUtils.DEG2RAD,
-        "rightUpperArm": 38 * THREE.MathUtils.DEG2RAD,
+        //"leftUpperArm": -38 * THREE.MathUtils.DEG2RAD,
+        //"rightUpperArm": 38 * THREE.MathUtils.DEG2RAD,
     };
     ikConfigs = [
         { target: "左足ＩＫ", bones: [`leftFoot`, 'leftLowerLeg', 'leftUpperLeg'] },
