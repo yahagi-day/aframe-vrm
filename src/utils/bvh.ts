@@ -16,22 +16,23 @@ export class BVHLoaderWrapper {
     }
 
     protected convertBoneName(name: string): string {
-        name = name.replace('Spin1', 'Spin');
-        name = name.replace('Chest1', 'Chest');
-        name = name.replace('Chest2', 'UpperChest');
+        name = name.replace('Spine', 'Spin');
+        //name = name.replace('Chest', 'Chest');
+        //name = name.replace('Chest2', 'UpperChest');
         name = name.replace('UpLeg', 'UpperLeg');
         name = name.replace('LeftLeg', 'LeftLowerLeg');
         name = name.replace('RightLeg', 'RightLowerLeg');
         name = name.replace('ForeArm', 'UpperArm');
         name = name.replace('LeftArm', 'LeftLowerArm');
         name = name.replace('RightArm', 'RightLowerArm');
-        name = name.replace('Collar', 'Shoulder');
-        name = name.replace('Elbow', 'LowerArm');
-        name = name.replace('Wrist', 'Hand');
-        name = name.replace('LeftHip', 'LeftUpperLeg');
-        name = name.replace('RightHip', 'RightUpperLeg');
-        name = name.replace('Knee', 'LowerLeg');
-        name = name.replace('Ankle', 'Foot');
+        //name = name.replace('Collar', 'Shoulder');
+        //name = name.replace('Elbow', 'LowerArm');
+        //name = name.replace('Wrist', 'Hand');
+        name = name.replace('LeftUpLeg', 'LeftUpperLeg');
+        name = name.replace('RightUpLeg', 'RightUpperLeg');
+        name = name.replace('LeftLeg', 'LeftLowerLeg');
+        name = name.replace('RightLeg', 'RightLowerLeg');
+        //name = name.replace('Ankle', 'Foot');
         return name.charAt(0).toLowerCase() + name.slice(1);
     }
 
